@@ -1,0 +1,19 @@
+<svg id="close" xmlns="http://www.w3.org/2000/svg" width="73.896" height="73.896" viewBox="0 0 73.896 73.896">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #909fb9;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_583" data-name="Grupo 583" transform="translate(0)">
+    <g id="Grupo_582" data-name="Grupo 582">
+      <path id="Caminho_120" data-name="Caminho 120" class="cls-1" d="M63.074,10.822A36.948,36.948,0,0,0,10.822,63.074,36.948,36.948,0,0,0,63.074,10.822ZM60.012,60.012A32.618,32.618,0,0,1,13.883,13.883,32.618,32.618,0,1,1,60.012,60.012Z" transform="translate(0)"/>
+    </g>
+  </g>
+  <g id="Grupo_585" data-name="Grupo 585" transform="translate(20.026 20.026)">
+    <g id="Grupo_584" data-name="Grupo 584">
+      <path id="Caminho_121" data-name="Caminho 121" class="cls-1" d="M171.962,168.9l-13.226-13.226,13.226-13.226a2.165,2.165,0,0,0-3.062-3.061l-13.226,13.226-13.226-13.226a2.165,2.165,0,1,0-3.062,3.062l13.226,13.226L139.387,168.9a2.165,2.165,0,0,0,3.062,3.062l13.226-13.226L168.9,171.963a2.165,2.165,0,1,0,3.062-3.062Z" transform="translate(-138.753 -138.754)"/>
+    </g>
+  </g>
+</svg>
