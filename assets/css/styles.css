@@ -6,10 +6,18 @@ textarea {
   font-family: 'Roboto', sans-serif;
 }
 
+strong {
+  font-weight: 700;
+}
+
+body,
+.benefits {
+  overflow-x: hidden;
+}
+
 picture {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 #topbar {
@@ -29,6 +37,35 @@ picture {
   text-align: center;
 }
 
+.subtitle {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.75;
+  opacity: 0.75;
+}
+
+.button {
+  align-items: center;
+  background-color: #ff594d;
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff !important;
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 500;
+  height: 3.125rem;
+  opacity: 1;
+  padding: 0px 1.375rem;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.7;
+}
+
 .banner {
   padding: 2rem 0px;
 }
@@ -43,8 +80,13 @@ picture {
 }
 
 .banner img {
-  height: 78.34vw;
+  height: auto;
   margin-bottom: 1.125rem;
+  width: 100%;
+}
+
+.banner picture {
+  max-width: 37.75rem;
   width: 100%;
 }
 
@@ -69,7 +111,7 @@ picture {
 
 .banner ul li {
   position: relative;
-  padding-left: 1.625rem;
+  padding-left: calc(1rem + 0.625rem);
 }
 
 .banner ul li + li {
@@ -95,6 +137,10 @@ picture {
   padding-top: 1.625rem;
 }
 
+.options .container {
+  max-width: 68.875rem;
+}
+
 .options .title {
   margin-bottom: 2.25rem;
 }
@@ -104,7 +150,10 @@ picture {
 }
 
 .options label {
+  cursor: pointer;
+  display: block;
   margin: 0px;
+  width: 100%;
 }
 
 .options label ~ label {
@@ -173,10 +222,10 @@ picture {
   background-color: #fff;
   border-radius: 50%;
   content: ' ';
-  height: 0.625rem;
+  height: 60%;
   transform: scale(0);
   transition: transform 0.2s ease;
-  width: 0.625rem;
+  width: 60%;
 }
 
 .options input[type='radio']:checked + label .option .option-radio {
@@ -187,28 +236,13 @@ picture {
   transform: scale(1);
 }
 
-.button {
-  background-color: #ff594d;
-  border-radius: 0.5rem;
-  border: none;
-  color: #fff;
-  font-size: 1.125rem;
-  font-weight: 500;
-  height: 3.125rem;
-  padding: 0px 1.375rem;
-  text-transform: uppercase;
+.warranty .container {
+  max-width: 70.375rem;
 }
 
 .warranty img {
   height: 13.5rem;
   width: 11.125rem;
-}
-
-.warranty .warranty-text {
-  font-size: 0.875rem;
-  line-height: 1.75;
-  opacity: 0.75;
-  text-align: center;
 }
 
 .benefits {
@@ -240,6 +274,11 @@ picture {
   text-transform: uppercase;
 }
 
+.call {
+  background-color: #ebf0f8;
+  padding: 3.5rem 0px;
+}
+
 .footer {
   color: rgba(70, 91, 149, 0.5);
   padding: 2rem 0px 1.625rem 0px;
@@ -250,12 +289,18 @@ picture {
   width: 13.5rem;
 }
 
-.footer p,
+.footer p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin: 0px;
+}
+
+.footer .footer-header,
 .footer .footer-box {
   max-width: 17.375rem;
 }
 
-.footer p {
+.footer .footer-header p {
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 2rem 0px;
@@ -264,7 +309,125 @@ picture {
 .footer .footer-box {
   border: 0.0625rem solid rgba(70, 91, 149, 0.25);
   box-shadow: 0px 0.1875rem 0.375rem rgba(0, 0, 0, 0.1);
-  font-size: 0.75rem;
-  font-weight: 300;
   padding: 0.875rem 0.625rem;
+}
+
+@media (min-width: 576px) {
+  .footer .footer-header,
+  .footer .footer-box {
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    /* font-size: 1.75rem; */
+    font-size: 2.375rem !important;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .button {
+    font-size: 1.375rem;
+    height: 3.875rem;
+  }
+
+  #topbar {
+    height: 4.375rem;
+  }
+
+  #topbar img {
+    height: 1.625rem;
+    width: 13.625rem;
+  }
+
+  .banner ul li::before {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .banner ul li {
+    padding-left: calc(1.5rem + 0.625rem);
+  }
+
+  .banner .banner-title {
+    font-size: 1.25rem;
+  }
+
+  .banner .banner-description {
+    font-size: 1.125rem;
+  }
+
+  .options .option {
+    padding: 3.125rem 2.625rem;
+  }
+
+  .options label:nth-of-type(odd) .option {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+  }
+
+  .options label:nth-of-type(even) .option {
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+  }
+
+  .option .option-title {
+    font-size: 1.125rem;
+  }
+
+  .option .option-description {
+    font-size: 1rem;
+    max-width: 48.125rem;
+  }
+
+  .option .option-radio {
+    height: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+  }
+
+  .benefits {
+    text-align: left;
+  }
+
+  .benefits .col {
+    display: flex;
+    align-items: center;
+  }
+
+  .benefits img {
+    margin-bottom: 0px;
+    margin-right: 0.75rem;
+  }
+
+  .footer .footer-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .footer .footer-header img {
+    margin-right: 2.5rem;
+  }
+
+  .footer .footer-box {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner img {
+    margin: 0px;
+  }
+
+  .banner ul {
+    padding-left: 2.625rem;
+    padding-right: 0px;
+  }
+
+  .benefits .benefits-title {
+    font-size: 0.875rem;
+  }
 }
