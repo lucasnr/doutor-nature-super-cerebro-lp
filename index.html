@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="./assets/css/block/options.css" />
     <link rel="stylesheet" href="./assets/css/block/warranty.css" />
     <link rel="stylesheet" href="./assets/css/block/faq.css" />
+    <link rel="stylesheet" href="./assets/css/block/fixed.css" />
   </head>
-  <body>
+  <body class="pb-sm-0">
     <aside
       id="topbar"
       class="d-flex align-items-center justify-content-center border-bottom"
@@ -84,7 +85,7 @@
         </div>
       </header>
 
-      <section class="options">
+      <section class="options" id="opcoes">
         <div class="container">
           <h2 class="title">Selecione uma opção abaixo:</h2>
 
@@ -140,7 +141,7 @@
         </div>
       </section>
 
-      <section class="warranty pt-2 pt-md-5 pb-5">
+      <section id="fixed-activator" class="warranty pt-2 pt-md-5 pb-5">
         <div class="container">
           <div class="d-flex flex-column flex-lg-row align-items-center">
             <picture>
@@ -430,14 +431,17 @@
       </div>
     </footer>
 
-    <script>
-      const faq = document.querySelector('.faq');
-      const buttons = faq.querySelectorAll('.faq-button');
-      buttons.forEach((button) => {
-        button.onclick = () => {
-          button.parentElement.parentElement.classList.toggle('active');
-        };
-      });
-    </script>
+    <aside class="fixed d-sm-none">
+      <h2 class="fixed-title">
+        Pronto para ver o que o Protocolo SuperCérebro pode fazer por voce?
+      </h2>
+      <a href="#opcoes" class="button">
+        Quero começar
+        <img src="./assets/img/icon-button.png" alt="Botão" class="ml-3" />
+      </a>
+    </aside>
+
+    <script src="./assets/js/faq.js"></script>
+    <script src="./assets/js/fixed.js"></script>
   </body>
 </html>

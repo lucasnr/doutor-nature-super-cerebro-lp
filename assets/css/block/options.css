@@ -89,16 +89,11 @@
   border-radius: 50%;
   content: ' ';
   height: 60%;
-  transform: scale(0);
   width: 60%;
 }
 
 .options input[type='radio']:checked + label .option .option-radio {
   border-color: #fff;
-}
-
-.options input[type='radio']:checked + label .option .option-radio::after {
-  transform: scale(1);
 }
 
 @media (min-width: 768px) {
