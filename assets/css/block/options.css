@@ -32,7 +32,6 @@
   border: 0.0625rem solid #bebebe;
   padding: 2rem 1.25rem;
   position: relative;
-  transition: background-color 0.3s ease;
 }
 
 .options input[type='radio']:checked + label .option {
@@ -91,7 +90,6 @@
   content: ' ';
   height: 60%;
   transform: scale(0);
-  transition: transform 0.2s ease;
   width: 60%;
 }
 
