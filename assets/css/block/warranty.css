@@ -1,0 +1,15 @@
+.warranty .container {
+  max-width: 70.375rem;
+}
+
+.warranty img {
+  height: 13.5rem;
+  width: 11.125rem;
+}
+
+@media (min-width: 992px) {
+  .warranty img {
+    height: 17.5rem;
+    width: 14.125rem;
+  }
+}

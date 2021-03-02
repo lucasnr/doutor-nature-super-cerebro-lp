@@ -1,0 +1,94 @@
+.banner {
+  padding: 2rem 0px;
+}
+
+.banner .container {
+  max-width: 81rem;
+}
+
+.banner .title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.banner img {
+  height: auto;
+  margin-bottom: 1.125rem;
+  width: 100%;
+}
+
+.banner picture {
+  max-width: 37.75rem;
+  width: 100%;
+}
+
+.banner ul {
+  margin: 0px;
+  padding: 0px 2.125rem;
+}
+
+.banner ul li::before {
+  background-image: url(../img/check.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: ' ';
+  display: block;
+  height: 1rem;
+  left: 0px;
+  position: absolute;
+  top: 0.125rem;
+  width: 1rem;
+}
+
+.banner ul li {
+  position: relative;
+  padding-left: calc(1rem + 0.625rem);
+}
+
+.banner ul li + li {
+  margin-top: 1.5rem;
+}
+
+.banner .banner-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.banner .banner-description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .banner ul li::before {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .banner ul li {
+    padding-left: calc(1.5rem + 0.625rem);
+  }
+
+  .banner .banner-title {
+    font-size: 1.25rem;
+  }
+
+  .banner .banner-description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner img {
+    margin: 0px;
+  }
+
+  .banner ul {
+    padding-left: 2.625rem;
+    padding-right: 0px;
+  }
+}
