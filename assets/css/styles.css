@@ -290,7 +290,7 @@ picture {
 }
 
 .footer p {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   font-weight: 300;
   margin: 0px;
 }
@@ -301,7 +301,7 @@ picture {
 }
 
 .footer .footer-header p {
-  font-size: 0.875rem;
+  font-size: 0.875em;
   line-height: 1.5;
   margin: 2rem 0px;
 }
@@ -415,9 +415,25 @@ picture {
   .footer .footer-box {
     margin-top: 1.5rem;
   }
+
+  .footer {
+    font-size: 16px !important;
+  }
+
+  html {
+    font-size: 80%;
+  }
 }
 
 @media (min-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+
+  .option .option-radio {
+    /* border-width: 0.1875rem; */
+  }
+
   .banner img {
     margin: 0px;
   }
