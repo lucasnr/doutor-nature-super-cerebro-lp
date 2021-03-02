@@ -427,6 +427,11 @@ picture {
     padding-right: 0px;
   }
 
+  .warranty img {
+    height: 17.5rem;
+    width: 14.125rem;
+  }
+
   .benefits .benefits-title {
     font-size: 0.875rem;
   }
