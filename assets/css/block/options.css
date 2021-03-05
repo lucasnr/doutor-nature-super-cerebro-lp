@@ -23,7 +23,7 @@
 }
 
 .options .container {
-  max-width: 53rem;
+  max-width: 57rem;
 }
 
 .options form input[type='radio'] {
@@ -34,6 +34,7 @@
   cursor: pointer;
   display: inline-block;
   margin: 0px auto;
+  width: 100%;
 }
 
 .options label ~ label {
