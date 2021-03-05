@@ -1,15 +1,44 @@
+.warranty {
+  padding: 2.625rem 0px;
+}
+
 .warranty .container {
   max-width: 70.375rem;
 }
 
 .warranty img {
-  height: 13.5rem;
+  height: auto;
+  opacity: 0.5;
   width: 11.125rem;
 }
 
-@media (min-width: 992px) {
+.warranty .title {
+  max-width: 25rem;
+}
+
+.warranty .warranty-description {
+  color: #8e8e8e;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+@media (min-width: 576px) {
+  .warranty .title {
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .warranty {
+    padding: 3.5rem 0px;
+  }
+
   .warranty img {
-    height: 17.5rem;
-    width: 14.125rem;
+    width: 7.5rem;
+  }
+
+  .warranty .warranty-description {
+    font-size: 1.375rem;
   }
 }

@@ -21,30 +21,8 @@
 
 .benefits .benefits-title {
   color: #6b7c9a;
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin: 0px;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-  .benefits {
-    text-align: left;
-  }
-
-  .benefits .col {
-    display: flex;
-    align-items: center;
-  }
-
-  .benefits img {
-    margin-bottom: 0px;
-    margin-right: 0.75rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .benefits .benefits-title {
-    font-size: 0.875rem;
-  }
 }

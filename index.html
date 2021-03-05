@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -24,10 +24,7 @@
     <link rel="stylesheet" href="./assets/css/block/fixed.css" />
   </head>
   <body class="pb-sm-0">
-    <aside
-      id="topbar"
-      class="d-flex align-items-center justify-content-center border-bottom"
-    >
+    <aside id="topbar" class="d-flex align-items-center justify-content-center">
       <img
         src="./assets/img/logo.svg"
         alt="Logomarca Doutor Nature"
@@ -40,7 +37,7 @@
         <h1 class="title">Protocolo Supercérebro</h1>
 
         <div class="container">
-          <div class="d-flex flex-column flex-lg-row align-items-center">
+          <div class="d-flex flex-column align-items-center">
             <picture>
               <source
                 media="(min-width: 576px)"
@@ -49,36 +46,42 @@
               <img src="./assets/img/header.png" alt="Produtos" />
             </picture>
 
-            <ul class="list-unstyled">
+            <ul
+              class="list-unstyled d-xl-flex justify-content-around w-100 mt-xl-5"
+            >
               <li>
-                <h3 class="banner-title">
-                  O Relatório Pílula da Inteligência:
-                </h3>
+                <span class="banner-badge">24 edições</span>
+                <h3 class="banner-title">Protocolo Supercérebro</h3>
                 <p class="banner-description">
-                  Com o passo a passo para você reproduzir a sua própria pílula
-                  da inteligência;
-                </p>
-              </li>
-              <li>
-                <h3 class="banner-title">A Dieta Mind:</h3>
-                <p class="banner-description">
-                  Com o cardápio para turbinar o cérebro, combater a demência e
-                  o declínio mental relacionado à idade;
-                </p>
-              </li>
-              <li>
-                <h3 class="banner-title">
-                  24 Edições do Protocolo Supercérebro:
-                </h3>
-                <p class="banner-description">
-                  Um relatório (quinzenal) onde o Dr. Rafael faz suas
+                  <strong class="d-block">Um relatório (quinzenal)</strong>
+                  onde o Dr. Rafael faz suas
+                  <br />
                   recomendações mais importantes.
                 </p>
               </li>
               <li>
-                <h3 class="banner-title">
-                  Transmissões ao vivo, tira dúvidas e muito mais...
-                </h3>
+                <span class="banner-badge">relatório</span>
+                <h3 class="banner-title">Pílula da Inteligência:</h3>
+                <p class="banner-description">
+                  Com o passo a passo para você
+                  <br />
+                  produzir a sua
+                  <strong>
+                    própria pílula
+                    <br />
+                    da inteligência;
+                  </strong>
+                </p>
+              </li>
+              <li>
+                <span class="banner-badge">programa</span>
+                <h3 class="banner-title">Dieta Mind</h3>
+                <p class="banner-description">
+                  <strong>Com o cardápio para turbinar <br />o cérebro</strong>,
+                  combater a demência
+                  <br />
+                  e o declínio mental relacionado à idade;
+                </p>
               </li>
             </ul>
           </div>
@@ -87,51 +90,84 @@
 
       <section class="options" id="opcoes">
         <div class="container">
-          <h2 class="title">Selecione uma opção abaixo:</h2>
+          <h2 class="title">Selecione uma opção:</h2>
 
           <form>
-            <input type="radio" id="plano-anual" name="opcao" checked />
-            <label for="plano-anual">
-              <div class="option">
-                <h3 class="option-title">
-                  <strong>Plano anual</strong> (24 edições por apenas R$ 57/mês)
-                </h3>
-                <p class="option-description">
-                  <span>
-                    Quero receber <em>a cada 15 dias</em> o Protocolo
-                    Supercérebro do Dr. Rafael e ganhar meus
-                    <span class="text-uppercase">Bônus gratuitos!</span>
-                  </span>
-                  <span class="option-radio"></span>
-                </p>
-              </div>
-            </label>
+            <div class="d-flex flex-column align-items-center flex-lg-row">
+              <input
+                type="radio"
+                id="plano-anual"
+                name="opcao"
+                value="plano-atual"
+                checked
+              />
+              <label for="plano-anual">
+                <div class="option">
+                  <h3 class="option-title">Plano anual</h3>
+                  <h4 class="option-subtitle">
+                    (24 edições por apenas <strong>R$ 57/mês</strong>)
+                  </h4>
+                  <p class="option-description">
+                    <span>
+                      Quero receber a cada 15 dias
+                      <br />
+                      o Protocolo Supercérebro
+                      <br />
+                      e
+                      <strong>
+                        ganhar meus
+                        <span class="text-uppercase">Bônus gratuitos!</span>
+                      </strong>
+                    </span>
 
-            <input type="radio" id="desconto-senior" name="opcao" />
-            <label for="desconto-senior">
-              <div class="option">
-                <h3 class="option-title pr-5">
-                  <strong>Desconto sênior!</strong> Tenho mais de 60 anos, quero
-                  economizar 50%. Assinatura Anual
-                  <br class="d-none d-md-block" />
-                  (24 edições por apenas R$ 21/mês)
-                </h3>
-                <p class="option-description">
-                  <span>
-                    Quero receber <em>a cada 15 dias</em> o Protocolo
-                    Supercérebro do Dr. Rafael e ganhar meus
-                    <span class="text-uppercase">Bônus gratuitos!</span>
-                  </span>
-                  <span class="option-radio"></span>
-                </p>
-              </div>
-            </label>
+                    <span class="option-radio">
+                      <span class="option-radio-background"></span>
+                    </span>
+                  </p>
+                </div>
+              </label>
+
+              <input
+                type="radio"
+                id="desconto-senior"
+                value="descont-senior"
+                name="opcao"
+              />
+              <label for="desconto-senior">
+                <div class="option">
+                  <h3 class="option-title">Desconto sênior!</h3>
+                  <h4 class="option-subtitle">
+                    (24 edições por apenas <strong>R$ 21/mês</strong>)
+                  </h4>
+                  <p class="option-description">
+                    <span>
+                      <strong class="highlight">
+                        Tenho mais de 60 anos
+                        <br />
+                        e quero economizar 50%
+                      </strong>
+                      <br />
+                      recebendo a cada 15 dias
+                      <br />
+                      o Protocolo Supercérebro
+                      <br />
+                      e ganhar meus
+                      <strong class="text-uppercase">bônus gratuitos!</strong>
+                    </span>
+
+                    <span class="option-radio">
+                      <span class="option-radio-background"></span>
+                    </span>
+                  </p>
+                </div>
+              </label>
+            </div>
 
             <div class="d-flex justify-content-center mt-5">
               <button type="submit" class="button">
                 Próximo passo
                 <img
-                  src="./assets/img/icon-button.png"
+                  src="./assets/img/icon-button.svg"
                   alt="Botão"
                   class="ml-3"
                 />
@@ -141,23 +177,21 @@
         </div>
       </section>
 
-      <section id="fixed-activator" class="warranty pt-2 pt-md-5 pb-5">
+      <section id="fixed-activator" class="warranty">
         <div class="container">
-          <div class="d-flex flex-column flex-lg-row align-items-center">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/garantia@2x.png"
-              />
-              <img src="./assets/img/garantia.png" alt="Selo de garantia" />
-            </picture>
+          <div class="d-flex flex-column align-items-center">
+            <img src="./assets/img/warranty.svg" alt="Selo de garantia" />
 
             <div>
-              <h2 class="title mt-3 mb-4 px-4 text-lg-left">
-                Ao dizer <span class="text-uppercase">sim</span> ao Protocolo
-                Supercérebro, você está protegido pela nossa garantia.
+              <h2 class="title my-5 mx-auto">
+                <span class="font-weight-normal d-md-block">
+                  Ao dizer <strong class="text-uppercase">sim</strong> ao
+                  Protocolo Supercérebro,
+                </span>
+
+                você está protegido pela nossa garantia.
               </h2>
-              <p class="subtitle px-3 text-center text-lg-left">
+              <p class="warranty-description text-center px-3">
                 O que significa que, se por qualquer motivo você ficar
                 insatisfeito(a) com o programa, basta solicitar reembolso no
                 prazo de 7 dias, e devolveremos 100% do dinheiro investido.
@@ -206,7 +240,11 @@
 
       <section class="faq py-5">
         <div class="container px-0">
-          <h2 class="title">Perguntas Frequentes</h2>
+          <h2 class="title">
+            Perguntas
+            <br class="d-md-none" />
+            Frequentes
+          </h2>
 
           <ul class="list-unstyled">
             <li>
@@ -344,87 +382,41 @@
           </ul>
         </div>
       </section>
-
-      <section class="call d-none d-lg-block">
-        <div class="container">
-          <div class="d-flex align-items-center">
-            <img
-              src="./assets/img/dr-rafael.png"
-              alt="Doutor Rafael Freitas"
-              class="img-fluid mr-3"
-            />
-
-            <div class="pl-4 pl-xl-5">
-              <h2 class="title text-left">
-                Pronto para ver o que o Protocolo SuperCérebro pode fazer por
-                você?
-              </h2>
-              <h3 class="subtitle my-4">
-                Clique no botão abaixo para receber acesso imdediato e recupere
-                sua mente jovem home mesmo!
-              </h3>
-
-              <div class="d-flex justify-content-start">
-                <a href="#" class="button"
-                  >Quero começar
-                  <img
-                    src="./assets/img/icon-button.png"
-                    alt="Botão"
-                    class="ml-3"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <footer class="footer border-top py-md-5">
+    <footer class="footer py-md-5">
       <div class="container">
-        <div
-          class="d-flex flex-column align-items-center text-center text-md-left"
-        >
-          <header class="footer-header d-md-flex align-items-center">
+        <div class="d-flex flex-column align-items-center text-center">
+          <header class="footer-header">
             <img src="./assets/img/logo-alt.svg" alt="Logomarca DoutorNature" />
 
-            <p class="m-md-0">
-              <strong>Doutor Nature</strong>, CNPJ 26.434.850/0001-91 é uma
-              empresa brasileira voltada para o mercado editorial na área da
-              saúde natural
-              <strong class="d-block">
+            <p class="my-4">
+              <strong>Doutor Nature</strong>, CNPJ 26.434.850/0001-91
+              <br />
+              é uma empresa brasileira voltada para o mercado editorial
+              <br />
+              na área da saúde natural
+
+              <span class="d-block my-4">
                 &copy; Copyright 2021 Doutor Nature - Todos os Direitos
                 Reservados
-              </strong>
-              R. Marina Ciufuli Zanfelice, 280 Lapa, São Paulo/SP
+              </span>
+
+              R. Marina Ciufuli Zanfelice, 280 Lapa,
+              <br />
+              São Paulo/SP
             </p>
           </header>
 
-          <p class="d-none d-md-block">
-            O editor deste conteúdo não é médico ou pratica a medicina a
-            qualquer título, ou qualquer outra profissão terapêutica. Apenas
-            expressa sua opinião baseado em dados e fatos apresentados por
-            agentes da saúde, ou conteúdo informativo disponível ao público,
-            considerados confiáveis na data de publicação. Posto que as opiniões
-            nascem de julgamentos e estimativas, estão sujeitas a mudança.
-            Elaborado por editores independentes do Doutor Nature, este
-            relatório é de uso exclusivo de seu destinatário. São estritamente
-            proibidos, sem autorização por escrito do detentor dos direitos
-            autorais, sob as penalidades previstas em lei, a comunicação ou a
-            distribuição dos materiais incluídos neste boletim, bem como a
-            reprodução total ou parcial, por qualquer meio ou processo,
-            incluindo fotocópias e distribuição via computador. O Ministério da
-            Saúde Adverte: não existem evidências científicas comprovadas de que
-            este alimento previna, trate ou cure doenças.
-          </p>
-
-          <aisde class="footer-box">
+          <aisde class="footer-box px-xl-5">
             <p>
               As informações contidas neste boletim são publicadas
               exclusivamente para fins informativos e não podem ser consideradas
-              como aconselhamento médico pessoal. O leitor deve, para qualquer
-              questão relativa à sua saúde e bem-estar, consultar um
-              profissional devidamente credenciado pelas autoridades de saúde.
+              como aconselhamento médico pessoal.
+              <br />
+              O leitor deve, para qualquer questão relativa à sua saúde e
+              bem-estar, consultar um profissional devidamente credenciado pelas
+              autoridades de saúde.
             </p>
           </aisde>
         </div>
@@ -437,7 +429,7 @@
       </h2>
       <a href="#opcoes" class="button">
         Quero começar
-        <img src="./assets/img/icon-button.png" alt="Botão" class="ml-3" />
+        <img src="./assets/img/icon-button.svg" alt="Botão" class="ml-3" />
       </a>
     </aside>
 

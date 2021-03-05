@@ -1,5 +1,6 @@
 .footer {
   color: rgba(70, 91, 149, 0.5);
+  font-family: 'PT Serif', sans-serif;
   padding: 2rem 0px 1.625rem 0px;
 }
 
@@ -9,19 +10,18 @@
 }
 
 .footer p {
-  font-size: 0.75em;
+  font-size: 0.875em;
   font-weight: 300;
+  line-height: 1.5;
   margin: 0px;
 }
 
 .footer .footer-header,
 .footer .footer-box {
-  max-width: 17.375rem;
+  max-width: 23.75rem;
 }
 
 .footer .footer-header p {
-  font-size: 0.875em;
-  line-height: 1.5;
   margin: 2rem 0px;
 }
 
@@ -35,23 +35,5 @@
   .footer .footer-header,
   .footer .footer-box {
     max-width: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer .footer-header {
-    margin-bottom: 1.25rem;
-  }
-
-  .footer .footer-header img {
-    margin-right: 2.5rem;
-  }
-
-  .footer .footer-box {
-    margin-top: 1.5rem;
-  }
-
-  .footer {
-    font-size: 16px !important;
   }
 }
