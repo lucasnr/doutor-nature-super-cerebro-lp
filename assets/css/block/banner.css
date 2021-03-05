@@ -15,6 +15,7 @@
 .banner img {
   height: auto;
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .banner picture {
@@ -96,15 +97,15 @@
 }
 
 @media (min-width: 1200px) {
+  .banner {
+    padding-bottom: 4rem;
+  }
+
   .banner ul li {
     padding: 0px 1rem;
   }
 
   .banner ul li + li::before {
     content: none;
-  }
-
-  .banner img {
-    margin: 0px;
   }
 }

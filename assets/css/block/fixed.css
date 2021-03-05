@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  padding-bottom: 8.875rem;
+  padding-bottom: 10.75rem;
 }
 
 .fixed {
@@ -26,6 +26,7 @@ body {
   color: #fff;
   font-size: 1.125rem;
   font-weight: 500;
+  line-height: 1.5;
   margin-bottom: 1.125rem;
   margin-top: 0px;
   text-align: center;

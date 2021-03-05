@@ -1,9 +1,9 @@
 (() => {
   const faq = document.querySelector('.faq');
-  const buttons = faq.querySelectorAll('.faq-button');
-  buttons.forEach((button) => {
-    button.onclick = () => {
-      button.parentElement.parentElement.classList.toggle('active');
+  const headers = faq.querySelectorAll('.faq-item-header');
+  headers.forEach((header) => {
+    header.onclick = () => {
+      header.parentElement.classList.toggle('active');
     };
   });
 })();

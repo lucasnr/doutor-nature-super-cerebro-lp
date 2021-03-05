@@ -42,9 +42,14 @@
 }
 
 .options .option {
+  align-items: flex-start;
   background-color: #fff;
   border-radius: 0.75rem;
   color: #364453;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
   margin: 0px auto;
   max-width: 25rem;
   padding: 1.75rem 1.25rem;
