@@ -9,17 +9,16 @@
 .faq ul li .faq-item-header {
   align-items: center;
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
-  color: #075074;
+  color: #495663;
   cursor: pointer;
   display: flex;
-  font-weight: 700;
   justify-content: space-between;
   padding: 2rem 1.625rem;
 }
 
 .faq ul li .faq-title {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.375;
   margin-bottom: 0px;
   transition: color 0.3s ease;
@@ -39,8 +38,10 @@
     color 0.3s ease;
 }
 
-.faq ul li.active .faq-item-header {
+.faq ul li.active .faq-item-header,
+.faq ul li.active .faq-title {
   color: #ff594d;
+  font-weight: 700;
 }
 
 .faq ul li.active .faq-button {
@@ -88,6 +89,7 @@
 }
 
 .faq ul li .faq-content p {
+  color: #364453;
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.75;
